@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="style.css">
+<script src="http://d3js.org/d3.v3.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+
+
+<body>
+	<div id = "synth">
+	</div>
+
+	<div id = "sliders">		<h1>Click the Boxes</h1>
+
+		<p>
+			<label for="bpmValue">Beats Per Minute:</label>
+			<input type="text" id="bpmValue" style="border: 0; color: #f6931f; font-weight: bold;" />
+		</p>
+		<div id="bpm" class = "slider"></div>
+
+		<p>
+			<label for="noteLengthValue">Note Length:</label>
+			<input type="text" id="noteLengthValue" style="border: 0; color: #f6931f; font-weight: bold;" />
+		</p>
+		<div id="noteLength" class = "slider"></div>
+
+		<p>
+			<label for="pitchValue">Pitch:</label>
+			<input type="text" id="pitchValue" style="border: 0; color: #f6931f; font-weight: bold;" />
+		</p>
+		<div id="pitch" class = "slider"></div>
+
+		<p></p>
+		<p>Scale</p>
+		<form>
+			<div id="scales">
+				<input type="radio" id="radio1" name="radio" checked="checked"/><label for="radio1">Major</label>
+				<input type="radio" id="radio2" name="radio" /><label for="radio2">Minor</label>
+		 		<input type="radio" id="radio3" name="radio" /><label for="radio3">Blues</label>
+		 		<input type="radio" id="radio4" name="radio" /><label for="radio4">Pentatonic</label>
+			</div>
+		</form>
+
+		<p></p>
+		<p>Waveform</p>
+		<form>
+			<div id="waveform">
+				<input type="radio" id="w1" name="wave"/><label for="w1">Sine</label>
+				<input type="radio" id="w2" name="wave"   checked="checked"/><label for="w2">Square</label>
+		 		<input type="radio" id="w3" name="wave"/><label for="w3">Saw</label>
+		 		<input type="radio" id="w4" name="wave" /><label for="w4">Tri</label>
+			</div>
+		</form>
+
+		<p>Chrome or Safari required</p>
+	</div>
+
+</body>
+
+<script src="wrapper.js"></script>
+<script src="sound.js"></script>

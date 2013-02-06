@@ -1,0 +1,17 @@
+.slider{
+    height: 10px;
+    width: 200px;
+    margin-left: 550px;
+}
+
+body{
+}
+
+#synth{
+    float: left;
+    width: 550px;
+}
+
+#sliders{
+    margin-top: 10px;
+}
